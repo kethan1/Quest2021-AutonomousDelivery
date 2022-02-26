@@ -1,0 +1,6 @@
+opencv-python
+numpy
+picamera
+picamera[array]
+scipy
+matplotlib

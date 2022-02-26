@@ -1,0 +1,79 @@
+{
+    "Encoder_Left": [22, 25],
+    "Encoder_Right": [23, 24],
+    "L298N_PINS": {
+        "BACKWARD": 5,
+        "FORWARD": 12
+    },
+    "HALL_EFFECT_PIN": 16,
+    "STOP_SWITCH": 17,
+    "TIMING_SWITCH": 18,
+    "P": 0.03,
+    "I": 0,
+    "D": 0.034,
+    "MAINTAIN_SPEED_PID": {
+        "P": 2.0,
+        "I": 0.025,
+        "D": 1.8
+    },
+    "LED_CONFIG": {
+        "red": 6,
+        "green": 13,
+        "blue": 26
+    },
+    "LED_COLOR_COMBOS": {
+        "red": {
+            "red": 100,
+            "green": 0,
+            "blue": 0
+        },
+        "green": {
+            "red": 0,
+            "green": 100,
+            "blue": 0
+        },
+        "blue": {
+            "red": 0,
+            "green": 0,
+            "blue": 100
+        },
+        "purple": {
+            "red": 100,
+            "green": 0,
+            "blue": 100
+        },
+        "cyan": {
+            "red": 0,
+            "green": 100,
+            "blue": 100
+        },
+        "white": {
+            "red": 100,
+            "green": 100,
+            "blue": 100
+        },
+        "yellow": {
+            "red": 100,
+            "green": 100,
+            "blue": 0
+        }
+    },
+    "CROPPING": {
+        "do": true,
+        "left": 0,
+        "right": 0,
+        "top": 0.4
+    },
+    "INTERSECTION_TIMINGS": {
+        "M": 0.00153,
+        "B": 0.16,
+        "turning_timing": 0.48
+    },
+    "intersection_turns": ["RIGHT"],
+    "ONE_BALL_UNLOADING": 5,
+    "MANY_BALL_UNLOADING": 25,
+    "GRAYSCALE_THRESHOLD": 70,
+    "BASE_SPEED": 0.5,
+    "INTERSECTION_PORTION": 0.5,
+    "debug": true
+}
