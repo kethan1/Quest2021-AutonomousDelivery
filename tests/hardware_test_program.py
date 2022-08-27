@@ -83,8 +83,16 @@ encoder_right = Encoder(*robot_config["Encoder_Right"])
 
 def process_input(text):
     text = text.lower()
-    return text not in ["no", "n", "didn't", "did not", "it didn't", "it did not",
-                        "fail", "bad"]
+    return text not in [
+        "no",
+        "n",
+        "didn't",
+        "did not",
+        "it didn't",
+        "it did not",
+        "fail",
+        "bad",
+    ]
 
 
 def test_motors():
@@ -120,7 +128,9 @@ def test_l298n_motors() -> None:
     GPIO.output(L298N_PINS["FORWARD"], GPIO.LOW)
 
     if process_input(
-        input("Did the vibration motor (connected to the L298N) move forward for 1 second? ")
+        input(
+            "Did the vibration motor (connected to the L298N) move forward for 1 second? "
+        )
     ):
         raise HardwareFailure("Motors Did Not Move Forward!")
     else:
@@ -193,9 +203,7 @@ def test_camera():
             cv2.waitKey(0)
             cv2.destroyAllWindows()
             if process_input(
-                input(
-                    "Do the images and the black and white images look good? "
-                )
+                input("Do the images and the black and white images look good? ")
             ):
                 raise HardwareFailure(
                     "Camera images or black and white thresholding is not working"
